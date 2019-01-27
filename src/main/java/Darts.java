@@ -1,4 +1,5 @@
-//Darts class in MASTER
+Darts_final
+master
 
 public class Darts {
     enum Multiplier {
@@ -10,6 +11,26 @@ public class Darts {
     private boolean isFinished = false;
     private int turn = 1;
     private int lastTurnScore = score;
+
+    public int score() {
+        return score;
+    }
+
+    public int dartsLeft() {
+        return dartsLeft;
+    }
+
+    public boolean isFinished() {
+        return isFinished;
+    }
+
+    public int turn() {
+        return turn;
+    }
+
+    public int lastTurnScore() {
+        return lastTurnScore;
+    }
 }
     public void darts(int throwScore) {
         updateDartBoard(throwScore, null);
